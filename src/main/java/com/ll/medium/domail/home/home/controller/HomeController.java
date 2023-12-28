@@ -7,8 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 @RequiredArgsConstructor
 public class HomeController {
+
 	@GetMapping("/")
 	public String showMain() {
-		return "domain/home/home/main";
+		return "redirect:/post/list/latest";
 	}
 }
